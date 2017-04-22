@@ -1,7 +1,11 @@
 # WebScraping
-Web Scraping using Scrapy Framework
+Web Scraping/Crawling using Scrapy Framework
 
+## Purpose
 
+    The spiders contained in this repo were created by me as part of my internship
+    at Alpine Capital Advisors. The spiders are currently being used for a larger
+    project involving Machine Learning and Natural Language Processing.
 
 ### Explanation of built in Scrapy python files
 
