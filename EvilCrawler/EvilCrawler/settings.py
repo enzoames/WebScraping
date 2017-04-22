@@ -16,10 +16,10 @@ NEWSPIDER_MODULE = 'EvilCrawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'EvilCrawler (+http://www.yourdomain.com)'
+USER_AGENT = 'Enzo Ames (+http://www.enzoames.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -83,6 +83,12 @@ ROBOTSTXT_OBEY = True
 
 # Enable and configure HTTP caching (disabled by default)
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
+"""
+Once HTTPCACHE_ENABLED is enabled, it caches every request made by your spider along with the related response. 
+So the next time you run your spider, it will not hit the server for requests already done. It’s a win-win: your 
+tests will run much faster and the website will save resources.
+"""
+
 #HTTPCACHE_ENABLED = True
 #HTTPCACHE_EXPIRATION_SECS = 0
 #HTTPCACHE_DIR = 'httpcache'

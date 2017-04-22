@@ -1,5 +1,9 @@
-from scrapy.spider import BaseSpider
-from scrapy.selector import HtmlXPathSelector
+"""
+Python script to get the title of every image on instagram account using Scrapy Framework
+
+requirements: pip install scrapy
+terminal command: scrapy crawl instaSpy -o insta.json
+"""
 import scrapy
 
 class InstagramSpider(scrapy.Spider):
@@ -32,25 +36,3 @@ class InstagramSpider(scrapy.Spider):
         }
 
         yield singleArticle
-
-
-
-        # // *[ @ id = "react-root"] / section / main / div / div / article / div[2] / ul / li[1] / h1 / span / text()
-
-
-
-        # // *[ @ id = "react-root"] / section / main / article / div / div[1]
-
-        # //*[@id="react-root"]/section/main/article/div/div[1]/div[1]
-
-        # #react-root > section > main > article > div > div._nljxa > div:nth-child(1) > a:nth-child(1)
-
-        # #react-root > section > main > article > div > div._nljxa > div:nth-child(1) > a:nth-child(1)
-
-        # #react-root > section > main > article > div > div._nljxa > div:nth-child(1)
-
-        # #react-root > section > main > article > div > div._nljxa > div:nth-child(1) > a:nth-child(1)
-
-        # //*[@id="react-root"]/section/main/article/div/div[1]
-
-        # #react-root > section > main > div > div > article > div._es1du._rgrbt > ul > li:nth-child(1) > h1 > span
