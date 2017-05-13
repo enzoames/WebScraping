@@ -57,20 +57,3 @@ class SinaSpider(scrapy.Spider):
 
         yield single_article
 
-        # artibody > p:nth-child(2)
-
-# /html/head/meta[3]
-        # artibody > p:nth-child(4)
-        #'.blkContainerSblk > artibody > p::text').extract_first()
-# #artibody > p:nth-child(3)
-# #subShowContent1_news1 > div:nth-child(1) > div > div.txt > h2 > a
-
-##subShowContent1_news1 > div:nth-child(1) > div > div.txt > h2 > a
-
-#//*[@id="subShowContent1_news1"]/div[1]/div/div[2]/div[1]/a
-
-# #subShowContent1_news1 > div.news-item.img-news-item > div
-# //*[@id="pub_date"]
-#artibody > div:nth-child(2)
-
-# //*[@id="artibody"]/p[3]/text()
